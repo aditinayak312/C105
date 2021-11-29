@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <title>
+        IMAGE RECOGNITION
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="container">
+                <center>
+            <h1 class="btn btn-default heading">
+                IMAGE RECOGNITION
+                </h1>
+                <br>
+                <br>
+                <p style="font-size:23px;">THE MODELS IS TRAINED IN THE FOLLOWING OBJECTS:-</p><br>
+                <b class="name_of_obj">pillow
+                    <i class="fas fa-bed"></i>
+                    <hr>
+                    happy face
+                    <i class="far fa-smile-beam"></i>
+                    <hr>
+                    body lotion
+                    <i class="fas fa-flask"></i>
+                <hr>
+                remote
+                <i class="fas fa-mobile-alt"></i>
+                    <hr>
+                    flower pot
+                    <i class="fas fa-leaf"></i>
+                    <hr>
+                    artificial moon
+                    <i class="far fa-moon"></i>
+            </b>
+            <br>
+            <br>
+            <label style="font-size:25px;">WEBCAM VIEW</label>
+            <br>
+            <div id="cam">
+                </div>
+                <br>
+<br>
+                <div id="result"></div>
+                <br>
+<br>
+<button class="btn btn-primary" onclick="takepic()">CLICK ME</button>
+<br>
+<br>
+<button class="btn btn-danger" onclick="identifypic()">IDENTIFY PICTURE</button>
+<br>
+<br>
+<p style="font-size:30px">OBJECT:<span id="obj_name"></span></p>
+<br>
+<br>
+<p style="font-size:30px">ACCURACY:<span id="obj_accuracy"></span></p>
+            </center>
+                </div>
+            <script src="main.js"></script>
+            </body>
+</html>
